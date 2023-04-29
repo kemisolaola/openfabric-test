@@ -1,0 +1,13 @@
+
+    <h2>Product List</h2>
+
+      <div>
+        <mat-grid-list  cols="3" rowHeight="2:1" >
+          <mat-grid-tile class="pa-1" *ngFor="let product of products"><app-product style="width: 90%;" [product] = "product"></app-product></mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <a mat-button color="primary" routerLink="/add-product">Add Product</a>
+  
+ 
+  
+  
